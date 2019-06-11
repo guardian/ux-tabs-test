@@ -1,3 +1,43 @@
+# Clientside Tabs Challenge
+
+We’d like you to complete a pair coding task to demonstrate your coding approach, how you communicate with another engineer, how you structure a solution and what you can do when you are allowed to be creative.
+
+This exercise will take up to **one hour**. We’re interested in how you would start building a production-ready feature. One hour may not be long enough to finish, that is fine.
+
+## The rules
+
+We have created a simple React app and client for our content API to get you started.  When completing this challenge you are free to use any appropriate libraries.
+
+## The exercise
+
+Inside this repo is an incomplete component. We'd like you to update it to meet the requirements listed below.
+
+You should implement a **tabbed component** that looks similar to the Guardian’s most recent content widget. You’ve no doubt seen one before, but just to be clear, here’s something similar to what you're aiming for:
+
+![Screenshot of a tabbed component](/tabbed-component.png)
+
+The component will be a numbered listing of the most recent Guardian content chosen from two sections of the site: All content and Football. Both of these sections should be represented by a tab, and be accessible to all users.
+
+## Considerations
+
+At the Guardian we try to build things to be lightweight, accessible, and usable across browsers, devices and network conditions.
+
+During implementation, please focus on the below considerations.
+
+### Accessibility
+
+A great deal of web content can be made accessible simply by using semantically correct HTML elements and role attributes. We'd like you to ensure the component is accessible for our readers that rely on screen reading technology or keyboard navigation to access our content.
+
+### Browser support
+
+Our site uses modern web standards to provide the best possible reading experience for our visitors. Although we aim to be readable on all possible devices and browsers, not all are capable of running the full set of features. We'd like you to make sure your application works on older browsers as well as the latest browsers. Our [recommended browser list](https://www.theguardian.com/help/recommended-browsers) states the browsers we currently support.
+
+### Reusability
+
+We'd like you to consider how your code could be recomposable into new solutions whilst retaining its internal implementation details.
+
+## Project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,43 +66,3 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
