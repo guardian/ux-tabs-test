@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { all, sport, travel } from "./services/CAPI";
 
-function App() {
+const App = () => {
+  const [allArticles, setAllArticles] = useState([]);
+  const [sportArticles, setSportArticles] = useState([]);
+  const [travelArticles, setTravelArticles] = useState([]);
+
+  useEffect(() => {
+    all().then(res => {
+      setAllArticles(res.response.results);
+    });
+    sport().then(res => {
+      setSportArticles(res.response.results);
+    });
+    travel().then(res => {
+      setTravelArticles(res.response.results);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>The Guardian</h1>
+      <ul>
+        <h2>All</h2>
+        {allArticles.map(article => (
+          <li key={article.id}>
+            <a href={article.webUrl}>{article.webTitle}</a>
+          </li>
+        ))}
+      </ul>
+      <ul>
+        <h2>Sport</h2>
+        {sportArticles.map(article => (
+          <li key={article.id}>
+            <a href={article.webUrl}>{article.webTitle}</a>
+          </li>
+        ))}
+        <h2>Travel</h2>
+        {travelArticles.map(article => (
+          <li key={article.id}>
+            <a href={article.webUrl}>{article.webTitle}</a>
+          </li>
+        ))}
+      </ul>
+    </>
   );
-}
+};
 
-export default App;
+export { App };
