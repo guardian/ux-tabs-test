@@ -18,11 +18,15 @@ You should implement a **tabbed component** that looks similar to the Guardianâ€
 
 The component will be a numbered listing of the most recent Guardian content chosen from two sections of the site: All content and Football. Both of these sections should be represented by a tab, and be accessible to all users.
 
+Despite the wealth of tab components in the React ecosystem you will be expected to implement your own in order to demonstrate some of the skills required to create custom components from scratch. You may use the internet to search for any relevant information during the test if required.
+
+There may not be enough time to complete all the requirements - this is fine!
+
 ## Considerations
 
-At the Guardian we try to build things to be lightweight, accessible, and usable across browsers, devices and network conditions.
+While the style of the component is important, it is not the sole focus of this test. At the Guardian we try to build things to be lightweight, accessible, and usable across browsers, devices and network conditions.
 
-During implementation, please focus on the below considerations.
+We expect you to focus primarily on the below considerations.
 
 ### Accessibility
 
@@ -38,7 +42,7 @@ We'd like you to consider how your code could be recomposable into new solutions
 
 ## Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It provides a base point for starting the test with some services in `./src/services/CAPI.js` to get the data you need from CAPI (the Guardian's Content API) and an `App` component that uses these services to fetch data and render all of the responses to the DOM. You should not need to access any other properties on the CAPI response than those already accessed in the project already (`webTitle` and `webUrl`).
 
 ## Available Scripts
 
