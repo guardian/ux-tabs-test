@@ -1,22 +1,13 @@
-import { qs } from "../utils/qs";
+import searchJSON from "./fixtures/search";
+import sportJSON from "./fixtures/sport";
+import travelJSON from "./fixtures/travel";
 
-const API_KEY = "test";
+// Introduce an random default of up to 500ms before returning the value
+const network = response =>
+  new Promise(res => setTimeout(() => res(response), Math.random() * 500));
 
-const getCAPISearchString = (
-  path,
-  params = {},
-  baseURL = "https://content.guardianapis.com/",
-  apiKey = API_KEY
-) =>
-  `${baseURL}${path}${qs({
-    ...params,
-    "api-key": apiKey
-  })}`;
-
-const fetchJSON = path => fetch(path).then(res => res.json());
-
-const all = async () => fetchJSON(getCAPISearchString("search"));
-const sport = async () => fetchJSON(getCAPISearchString("sport"));
-const travel = async () => fetchJSON(getCAPISearchString("travel"));
+const all = async () => network(searchJSON);
+const sport = async () => network(sportJSON);
+const travel = async () => network(travelJSON);
 
 export { sport, all, travel };
