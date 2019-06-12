@@ -42,7 +42,7 @@ We'd like you to consider how your code could be recomposable into new solutions
 
 ## Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It provides a base point for starting the test with some services in `./src/services/CAPI.js` to get the data you need from CAPI (the Guardian's Content API) and an `App` component that uses these services to fetch data and render all of the responses to the DOM. You should not need to access any other properties on the CAPI response than those already accessed in the project already (`webTitle` and `webUrl`).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It provides a base point for starting the test with some services in `./src/services/CAPI.js` to get the data you need from CAPI (the Guardian's Content API) and an example `App` component that uses these services to fetch data and render all of the responses to the DOM. You should not need to access any other properties on the CAPI response than those already accessed in the project already (`webTitle` and `webUrl`). The example `App` component also uses [hooks](https://reactjs.org/docs/hooks-intro.html) but you are not required to follow this pattern and can use classes to store any state you might need if you prefer.
 
 ## Available Scripts
 
