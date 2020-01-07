@@ -1,3 +1,5 @@
+This project is not in active use for Guardian roles and is not maintained.
+
 # Clientside Tabs Challenge
 
 We’d like you to complete a pair coding task to demonstrate your coding approach, how you communicate with another engineer, how you structure a solution and what you can do when you are allowed to be creative.
